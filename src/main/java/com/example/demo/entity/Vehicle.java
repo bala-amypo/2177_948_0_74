@@ -41,7 +41,13 @@ public class Vehical{
         this.capacityKg=capacityKg;
     }
 
-    public Double getFuelEffi
+    public Double getFuelEfficiency(){
+        return fuelEfficiency;
+    }
+
+    public Void setFuelEfficiency(Double fuelEfficiency){
+        this.fuelEfficiency=fuelEfficiency;
+    }
 
 
 }

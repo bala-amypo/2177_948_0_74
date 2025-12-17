@@ -19,6 +19,9 @@ public class Location{
         return id;
     }
 
-    public Long 
+    public Void setId(Long id){
+        return id;
+    }
+    
 
 }

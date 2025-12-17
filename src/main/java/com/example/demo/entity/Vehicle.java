@@ -17,5 +17,13 @@ public class Vehical{
     private Double fuelEfficiency;
 
     public Vehicle(){}
+    
+    public Long getid(){
+        return id;
     }
+    public void setid(Long id){
+        this.id=id;
+    }
+
+    
 }

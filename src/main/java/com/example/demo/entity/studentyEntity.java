@@ -17,7 +17,12 @@ public class studentEntity{
     private String email;
 
 
-    pu
+    public Long getId(){
+        return id;
+    }
+    public Void setId(String id){
+        this id=id;
+    }
 
     public studentEntity(){}
 

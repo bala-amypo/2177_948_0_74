@@ -4,7 +4,7 @@ import jarkarta.persistence.*;
 @Entity
 public class Vehical{
 
-    @id
+    @Id
     @GenerateValue(strategy=GenerationType.IDENTITY)
     Private Long id;
 
@@ -18,12 +18,30 @@ public class Vehical{
 
     public Vehicle(){}
     
-    public Long getid(){
+    public Long getId(){
         return id;
     }
-    public void setid(Long id){
+    public Void setId(Long id){
         this.id=id;
     }
 
-    
+    public User getUser(){
+        return user;
+    }
+
+    public Void setUser(User user){
+        this.user=user;
+    }
+
+    public String getVehicleNumber(){
+        return vechicleNumber;
+    }
+
+    public Double getCapacityKg(Double capacityKg){
+        this.capacityKg=capacityKg;
+    }
+
+    public Double getFuelEffi
+
+
 }

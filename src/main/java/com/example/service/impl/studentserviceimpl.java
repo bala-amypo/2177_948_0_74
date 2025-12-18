@@ -9,7 +9,7 @@ import java.util.*;
 import org.springframework.beans.factory.annotation.Autowired;
 @Service
 
-public class studentServiceImpl implements studentService{
+public class StudentServiceImpl implements StudentService{
 
     @Autowired
     studentRepo repo;    
@@ -18,7 +18,7 @@ public class studentServiceImpl implements studentService{
         return repo.findAll();
     }
 
-    public studentEntity addStudent(studentEntity student){
+    public StudentEntity addStudent(StudentEntity student){
         return repo.save(student);
     }
     

@@ -21,11 +21,11 @@ public class StudentEntity{
     public void setId(Long id){
         this.id=id;
     }
-    public studentEntity(){
+    public StudentEntity(){
 
     }
 
-    public studentEntity(Long id,String name,String email){
+    public StudentEntity(Long id,String name,String email){
         this.id=id;
         this.name=name;
         this.email=email;

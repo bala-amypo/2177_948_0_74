@@ -5,7 +5,9 @@ import org.springframework.stereotype.Service;
 import com.example.demo.service.*;
 import com.example.demo.repository.*;
 import com.example.demo.entity.*;
+import com.example.demo.exception.*;
 import java.util.*;
+
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +26,11 @@ public class StudentServiceImpl implements StudentService{
         return repo.save(student);
     }
 
-    public StudentEntity 
+    public StudentEntity getbyId(Long id){
+    return repo.findbyId(id).orElseThrow(() -> new StudentNotFoundException("Student Id not Found"));
+
+    }
+
     
  
 }

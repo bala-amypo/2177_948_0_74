@@ -26,4 +26,8 @@ public class StudentController {
     public StudentEntity addStudent(@Valid @RequestBody StudentEntity student) {
         return service.addStudent(student);
     }
+
+    @GetMapping("/get/{id}")
+    public StudentEntity getbyId(@PathVariable Long id)
+    return service.getbyId(id);
 }

@@ -23,6 +23,8 @@ public class StudentServiceImpl implements StudentService{
     public StudentEntity addStudent(StudentEntity student){
         return repo.save(student);
     }
+
+    public StudentEntity 
     
  
 }

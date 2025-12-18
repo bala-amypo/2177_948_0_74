@@ -14,7 +14,7 @@ public class StudentServiceImpl implements StudentService{
     @Autowired
     studentRepo repo;    
 
-    public List<studentEntity>getAll(){
+    public List<StudentEntity>getAll(){
         return repo.findAll();
     }
 

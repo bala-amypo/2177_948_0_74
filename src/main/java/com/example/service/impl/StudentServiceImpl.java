@@ -31,6 +31,11 @@ public class StudentServiceImpl implements StudentService{
 
     }
 
+    public StudentEntity updateById(Long id,StudentEntity newstu){
+        StudentEntity existing=getbyId(id);
+        
+    }
+
     
  
 }

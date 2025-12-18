@@ -1,5 +1,5 @@
 
-pacckage com.example.demo.controller;
+package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.*;
 import com.example.demo.entity.*;
